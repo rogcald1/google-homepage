@@ -1,11 +1,11 @@
 <!doctype html>
-
 <style>
-    #header {
+#header {
   font-size: 14px;
-  font-family: arial san-serif;
+  font-family: arial, san-serif;
+  margin-right: 7px;
 }
-ul{
+ul {
   list-style-type: none;
   margin: 0;
   padding: 0;
@@ -17,24 +17,25 @@ li a {
   display: block;
   text-align: center;
   padding: 14px 16px;
-  text-decoration: none; 
+  text-decoration: none;
   color: #000;
 }
 .profile {
-    background-color: blue;
-    border: solid 5px blue;
-    border-radius: 50%;
-    height: 25px;
-    width: 25px;
-    color: white;
-    text-align: center;
-    font-size: 22px;
-    margin: 0;
-    margin-top: 7px;
-    }
+  color: white;
+  background-color: blue;
+  border: solid 5px blue;
+  border-radius: 50%;
+  height: 25px;
+  width: 25px;
+  font-size: 22px;
+  margin-top: 7px;
+  float: right;
+  text-decoration: none;
+  text-align: center;
+}
 .material-icons {
-    margin-top: -3px;
- }
+  margin-top: -4px;
+}
 .searchsection {
   display: flex;
   flex-direction: column;
@@ -43,52 +44,131 @@ li a {
   margin-left: 224px;
 }
 .srchlogo {
-    display: grid;
-    border-radius: 40px;
-    border: transparent 1px #dad4d4;
-    padding: 10px;
-    margin-top: 125px;
-    height: 92px;
-    width: 272px;
-    align-items: center;
+  display: grid;
+  border-radius: 40px;
+  border: transparent 1px #dad4d4;
+  padding: 10px;
+  margin-top: 10em;
+  height: 92px;
+  width: 272px;
+  align-items: center;
 }
 .srchbox {
   border: none;
-  margin: 0;
+  margin: -1px;
   padding: 0;
   word-wrap: break-word;
   outline: none;
+  grid-column: 2/10;
+  margin-right: 150px;
 }
-.srchshadow {
+.srchall {
+  display: grid;
+  border-radius: 40px;
+  border: solid 1px gray;
+  padding: 3px;
+  width: 40%;
+}
+.srchicon {
+  opacity: 0.6;
+  grid-column: 1/1;
+  font-size: 14px;
+  margin-top: 0.5px;
+}
+#srchbuttons {
   display: flex;
-  border: 1px solid #dfe1e5;
-  border-radius: 24px;
+  align-items: center;
+  justify-content: center;
+}
+#gsearch,
+#lucky {
+  border: 1px solid white;
+  padding: 5px;
+  margin: 7px;
+  font-size: 14px;
+  font-family: arial, san-serif;
+}
+#gsearch:hover,
+#lucky:hover {
+  box-shadow: 0 1px 1px rgb(0, 0, 0, 0.1);
+  background-color: #f8f8f8f8;
+  border-radius: 5px;
+  cursor: pointer;
+  border: 1px solid #c6c6c6;
+}
+#fbar {
+  border-top: 1px solid #e4e4e4;
+  height: 40px;
+  bottom: 0;
+  width: 100%;
+  position: fixed;
+  background-color: #f8f8f8;
+}
+.footerbuttonsleft .adv,
+.bus,
+.how {
+  color: #5f6368;
+  font-family: arial, sans-serif;
+  font-size: 14px;
+}
+.footerbuttonsleft .adv:hover,
+.bus:hover,
+.how:hover {
+  text-decoration: underline;
+}
+.footerbuttonsright {
+  float: right;
+}
+.footerbuttonsright .priv,
+.term,
+.sett {
+  display: inline-block;
+  color: #5f6368;
+  font-family: arial, sans-serif;
+  font-size: 14px;
 }
 
 </style>
 
 <head>
-  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
-  <title>Google</title>
-</head>
-
-<body>
-  <header id="header">
-    <ul>
-    <li><a href="example.com">About</a></li>
-    <li><a href="example.com">Store</a></li>
-    <li style="float:right" class="profile">R</li>
-    <li style="float:right" class="material-icons"><a href="example.com">apps</a></li>
-    <li style="float:right"><a href="example.com">Images</a></li>
-    <li style="float:right"><a href="example.com">Gmail</a></li>    
-</ul>
-  </header>
-<main>
-  <div class="searchsection">
-  <img class="srchlogo" src="https://www.google.com/images/branding/googlelogo/2x/googlelogo_color_272x92dp.png">
-  <div class="srchshadow">
-  <input class="srchbox" type="text">
-  </div>
-  </div>
-</main>
-</body>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <title>Google</title>
+  </head>
+  
+  <body>
+    <header id="header">
+      <ul>
+      <li><a href="example.com">About</a></li>
+      <li><a href="example.com">Store</a></li>
+      <a href="example.com" class="profile">R</a>
+      <li style="float:right" class="material-icons"><a href="example.com">apps</a></li>
+      <li style="float:right"><a href="example.com">Images</a></li>
+      <li style="float:right"><a href="example.com">Gmail</a></li>    
+  </ul>
+    </header>
+  <main>
+    <div class="searchsection">
+    <img class="srchlogo" src="https://www.google.com/images/branding/googlelogo/2x/googlelogo_color_272x92dp.png">
+    <div class="srchall">
+    <span class="material-icons srchicon">search</span>  
+    <input class="srchbox" type="text">
+      </div></div>
+    <ul id="srchbuttons">
+      <li><a href="example.com" id="gsearch">Google Search</a></li>
+      <li><a href="example.com" id="lucky">I'm Feeling Lucky</a></li>
+    </ul>
+    </main>
+  <footer id="fbar">
+     <ul class="footerbuttonsleft">
+       <li><a href="example.com" class="adv">Advertising</a></li>
+       <li><a href="example.com" class="bus">Business</a></li>
+       <li><a href="example.com" class="how">How Search works</a><li>
+      </ul>
+      <ul class="footerbuttonsright">
+       <li><a href="example.com" class="priv">Privacy</a></li>
+       <li><a href="example.com" class="term">Terms</a></li>
+       <li><a href="example.com" class="sett">Settings</a><li>
+      </ul>
+    </footer>
+  </body>
+  
