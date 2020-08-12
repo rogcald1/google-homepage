@@ -1,3 +1,6 @@
 For this mini-project, you’ll deconstruct an existing web page and rebuild it. Don’t worry if the links don’t go anywhere and the search box doesn’t do anything when you submit it. The goal is to start thinking about how elements get placed on the page and roughly how they get styled and aligned. For some of you, this may be the first time you’ve actually tried to “build” something in HTML (very exciting!).
 
-Results: to come!
+Results: Took almost 3 days just to do what I thought would be easy. Initially I basically copy and pasted the entire Google homepage, which mostly worked. However, I realized that it wouldn't really be a good way of learning. So I Took everything down and started from scratch. 
+I have to admit, I did peek at other user's work to see what they did, but I also tried my best to refer to the actual Google homepage code to replicate what I saw. There were just some tricky parts which is why I leaned on other project submissions. What I thought was a "simple" page was full of scripts and several clashing IDs/classes that I had follow tracking down. So my page is basically a Frankenstein of a few different things. 
+I still have a LONG way to go - my CSS is definitely full of "static" positionings, using px and em units in several places which means that it wouldn't really work on different viewports. But I definitely plan on revisiting HTML/CSS in the future through other courses to dive in a bit deeper. I never thought it'd just take me a week to learn anyway. 
+Cheers.
